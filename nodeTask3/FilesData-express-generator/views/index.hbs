@@ -1,0 +1,27 @@
+
+
+<div style="background-color: aqua">
+{{#each Movies}}
+<li style="background-color: cadetblue ;margin: 10px ; list-style: none">
+<h1>ID: {{this.ID}}</h1>
+<h1>Movie Name : {{this.Name}}</h1>
+<a href="/deleteMovie/{{this.ID}}">Delete</a>
+<a href="/editMovie/{{this.ID}}">Edit</a>
+
+{{!-- <button>delete</button> --}}
+
+<br>
+</li>
+
+{{/each}}
+
+</div>
+
+{{!-- <script>
+function Edit(id){
+
+
+console.log(id)
+}
+
+</script> --}}
